@@ -4,6 +4,7 @@ html{
 	padding: 10px;
 	background: ##7f8c8d;
 	font-size:16px;
+	font-family: helvetica;
 	width: 1200px;
 }
 
@@ -11,7 +12,7 @@ body{
 	/*background-color: rgba(173, 136, 168, 0.5);*/
 	background-image: url("images/ocean-cliffs.jpeg");
 	background-repeat: no-repeat;
-	background-attachment: local;
+	background-attachment: fixed;
 }
 
 .wrapper{
@@ -26,6 +27,9 @@ header{
 	height: 175px;
 	background-color: rgba(165, 123, 146, 0.8);
 }
+header h1{
+	color: #fff;
+}
 
 nav{
  background-color: rgba(165, 123, 146, 0.8);
@@ -38,9 +42,9 @@ nav{
 }
 .topnav li{
 	display: inline;
-	margin:auto;
 	float: right;
-	margin-left: 40px;
+	margin: 100px 40px 0px 0px;
+
 }
 .topnav li a{
 	color: #fff;
@@ -54,9 +58,9 @@ nav{
 /* Main Content*/
 
 article{
-	padding: 20px;
-	margin: 40px 20px 40px 30px;
-	background-color: #fff;
+	padding: 20px 30px 20px 30px;
+	margin: 40px 10px 40px 20px;
+	background-color: rgba(255, 255, 255, 0.5);
 	width: 650px;
 	float:left;
 }
@@ -107,13 +111,15 @@ padding: 10px;
 	padding:10px;
 }
 .scriptbox {
-	width: 500px;
+	width: 600px;
 	text-align: center;
+	margin: auto;
 }
 .script{
 	width: 200px;
 	background-color: rgba(44, 60, 72, 0.4);
 	padding: 10px 70px 10px 70px;
+	margin: auto;
 }
 
 .section-title-3{
@@ -122,31 +128,80 @@ padding: 10px;
 }
 .wide-img{
 	text-align: center;
+	padding: 0px 0px 10px 0px;
 }
 
 /* Comment Sections*/
 
 .comments{
-	display: inline;
-}
-
-.comment-form{
 	border-bottom: 1px #000 solid;
+	padding-bottom: 5px;
+}
+.comment-form{
 	margin: 10px;
+	margin-left: 20%;
 	padding-bottom: 10px;
 	width: 500px;
 }
-
 label{
-	width: 100px;
-	margin-left: 50%;
-
+	width: 150px;
+	margin: 0%;
 }
+label, input {
+	padding: 5px;
+	margin-bottom: 5px;
+}
+input.email{
+	width: 200px;
+}
+.comment-form.display-name{
+	width: 150px;
+}
+.website {
+	width: 200px;
+}
+.comment-box {
+	margin-left: 10px;
+	width: 400px;
+	height: 300px
+}
+.submit{
+	-moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	font-size: 14px;
+	color:#ffffff;
+	font-weight:bold;
+	padding:10px 22px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+	margin-left: 10px;
+}
+
+/* User Comments */
 
 .user1{
 	margin-left:30px;
 	border-left: 1px #000 solid;
 	padding-left: 10px;
+	float: left;
+}
+.user1 img {
+	float: left;
+	padding: 5px;
 }
 
 .comment-text{
@@ -155,15 +210,27 @@ label{
 	padding-bottom: 10px;
 	width: 500px;
 }
-.comment-text img{
+.user{
 	float: left;
+	padding: 5px;
+}
+.user img{
+	float: left;
+	padding: 5px;
 }
 
 /* Side Nav*/
 aside{
-	width: 200px;
+	width: 190px;
+	height: 230px;
 	float: right;
-	margin-top: 20px;
+	margin-top: 40px;
+	color: #fff;
+	padding:5px;
+	background-color: rgba(0, 0, 72, 0.5);
+	-moz-box-shadow: -5px -5px 10px #777777;
+	-webkit-box-shadow: -5px -5px 10px #777777;
+	box-shadow:-5px -5px 10px #777777;
 }
 
 /*Media Queries*/
